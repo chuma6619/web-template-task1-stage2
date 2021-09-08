@@ -149,6 +149,7 @@ body{
 
 input[placeholder]{
     font-size: 1rem;
+    font-weight: 100;
 }
 .section4-button{
     border-radius: 30px;
@@ -160,27 +161,33 @@ input[placeholder]{
 }
 
 .section5-container{
-    padding: 40px 80px;
     align-items: center;
+    padding: 50px 80px;
 }
 
-.section5-column1{
-    width:40%;
-    height: 550px;
-    background-image: url("./images/article-img.jpeg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-right: 60px;
+.section5-column1-article-img-container{
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 40%;
+}
+
+.section5-column1-article-img{
+    width: 100%;
 }
 
 .section5-para{
-    margin-bottom: 30px;
+    font-weight: 100;
+    padding-left: 3rem;
+    font-weight: 100;
 }
 
 .section5-column2{
-    width:60%;
     font-size: 1.25rem;
+}
+
+.section5-column2-signature{
+    padding-left: 3rem;
+    padding-top: 2rem;
 }
 
 .section6-container{
@@ -188,14 +195,14 @@ input[placeholder]{
 }
 
 .section6-heading{
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-style: italic;
     font-weight: 700;
     font-family: 'Playfair Display', serif;
     line-height: 1.1;
     text-align: center;
     color: white;
-    padding-top: 30px;
+    padding-top: 70px;
 }
 
 .slide-gallery-container {
@@ -203,11 +210,32 @@ input[placeholder]{
     padding: 30px 80px;
 }
 
-.slide-gallery-img{
-    width: 17rem;
-    height: 22rem;
-    margin: 4px;
+.slide-gallery-img-container{
+    flex-grow: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    height: 400px;
+    margin: 0.3rem;
 }
+
+.slide-gallery-img-1{
+    background-image: url("./images/slide-1.jpg");
+}
+
+.slide-gallery-img-2{
+    background-image: url("./images/slide-2.jpg");
+}
+
+.slide-gallery-img-3{
+    background-image: url("./images/slide-3.jpg");
+}
+
+.slide-gallery-img-4{
+    background-image: url("./images/slide-4.jpg");
+}
+
 
 .section6-arrow{
     text-align: center;
@@ -215,23 +243,29 @@ input[placeholder]{
 }
 
 .section7-container{
-    padding: 70px 80px;
+    padding: 80px 100px;
+}
+
+.section7-column1{
+    height:360px;
+    flex-grow: 1;
+
 }
 
 .product{
-    width: 299px;
-    height: 360px;
-    margin-left: 20px;
-
+    width: 100%;
+    margin-right: 1.2rem;
 }
 
 .section7-column2{
     margin-left: 40px;
+    width: 100%;
 }
 
 .column2-head{
-    font-weight: 500;
-    font-size: 2.2rem;
+    font-weight: 400;
+    font-size: 2rem;
+    
 }
 
 .column2-price{
@@ -246,30 +280,36 @@ input[placeholder]{
 }
 
 .section7-button{
-    padding: 15px 30px;
+    padding: 13px 20px;
     border: unset;
-    width: 40%;
+    width: 46%;
     border-radius: 25px;
     background-color: black;
     color: white;
     margin-top: 20px;
     font-family: Roboto,sans-serif ;
-    font-size: 1.1rem;
-    font-weight: 300;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
 }
 
-.section8-container{
-    display: flex;
-    flex-direction: row;
+.section7-button:hover {
+    background-color: #d9b1b3;
 }
 
-.section8-column1{
-    max-width: 100%;
+
+.section8-column1-img-container{
+    height: 120vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1 0 50%;
 }
 
 .section8-column1-img{
-    width: 650px;
-    height: 780px;
+    background-image: url("./images/subscribe.jpeg");
+
+    
 }
 
 .section8-column2{
@@ -279,7 +319,7 @@ input[placeholder]{
 
 .line{
     border: 5px solid #d9b1b3;
-    width: 94%;
+    width: 95%;
 }
 
 .section8-column2-head{
@@ -293,22 +333,33 @@ input[placeholder]{
 
 
 .section8-column2-form input[type="text"], .section8-column2-form input[type="email"]{
-    padding: 15px 40px;
+    padding: 13px;
     margin-top: 60px;
-    margin-left: 15px;
+    margin-left: 20px;
+    width: 16rem;
+}
+
+.section8-button-container{
+    text-align: center;
 }
 
 .section8-button{
-    padding: 15px 30px;
+    padding: 13px;
     border-radius: 30px;
     border: unset;
     background-color: black;
     color: white;
     margin-top: 20px;
-    margin-left: 250px;
     font-weight: 400;
     font-family: Roboto,sans-serif ;
     font-size: 1rem;
+    width: 7.5rem;
+    cursor: pointer;
+
+}
+
+.section8-button:hover{
+    background-color: #d9b1b3;
 }
 
 .section8-text{
